@@ -32,6 +32,15 @@ axios.interceptors.request.use(function (req) {
     return req
 })
 axios.interceptors.response.use(function (res) {
+    if (res.data.meta.status === 401) {
+        router.push('/login')
+        sessionStorage.clear()
+        window.location.reload()
+    }
     return res
 })
 Vue.prototype.$http = axios
+
+
+
+
