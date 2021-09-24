@@ -20,6 +20,7 @@
           <el-button
             type="primary"
             @click="addDialogVisible = true"
+            v-permission="{action:'add'}"
           >添加用户</el-button>
         </el-col>
       </el-row>
@@ -42,12 +43,14 @@
             <el-button 
               type="primary" 
               icon="el-icon-edit" 
+              v-permission="{action:'edit',effect:'disabled'}"
               size="mini">
             </el-button>
             <!-- 删除按钮 -->
             <el-button
               type="danger"
               icon="el-icon-delete"
+               v-permission="{action:'delete',effect:'disabled'}"
               size="mini"
               @click="removeById(scope.row.id)">
             </el-button>
@@ -60,6 +63,7 @@
               <el-button 
                 type="warning" 
                 icon="el-icon-setting" 
+                 v-permission="{action:'edit',effect:'disabled'}"
                 size="mini">
               </el-button>
             </el-tooltip>

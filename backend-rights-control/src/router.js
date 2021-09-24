@@ -77,7 +77,10 @@ export function initDynamicRoutes() {
   const rightList = store.state.rightList
   rightList.forEach(item => {
     item.children.forEach(item => {
+      const temp = ruleMapping[item.path]
+      temp.meta = item.rights
       currentRoutes[2].children.push(ruleMapping[item.path])
+       
     })
   })
   router.addRoutes(currentRoutes)
