@@ -1,5 +1,13 @@
 # vue_shop
 
+### csdn文档
+
+
+```
+https://blog.csdn.net/weixin_45896126/article/details/120443214
+```
+
+
 ## Project setup
 ```
 npm install
@@ -9,21 +17,3 @@ npm install
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
